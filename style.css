@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family: android;
+    src: url('fontes/idroid.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: Bebas Neue;
+    src: url('fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2fa866;
+    --cor4: #1A5C37;
+    --cor5: #063d13;
+    --fonte0: 'Arial', Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'android', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-family: var(--fonte0);
+    color: black;
+    background-color: var(--cor0);
+
+}
+
+a.externo::after {
+    content: '\1F517';
+}
+
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    text-align: center;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.781);
+    font-family: var(--fonte1);
+    margin-bottom: 30px;
+    margin-right: auto;
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507)
+}
+
+header > p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.781);;
+    font-family: var(--fonte1);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507)
+}
+
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192) ;
+}
+
+nav > a {
+    color: var(--cor0);
+    margin-bottom: 35px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor5);
+}
+
+
+main {
+    background-color: rgba(255, 255, 255, 0.74);
+    min-width: 250px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px ;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1 {
+    color: var(--cor4);
+    font-family: var(--fonte2);
+    font-weight: normal;
+   font-size: 1.8em; 
+}
+
+main h2 {
+    font-weight: normal;
+    color: var(--cor3);
+    font-size: 1.3em;
+    font-family: var(--fonte2);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+}
+
+main  p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    background-color: var(--cor0);
+    padding: 2px 6px;
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main img {
+    width:100%;
+}
+
+main img.pequena{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;   
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 1%;
+}
+
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;   
+    box-shadow:3px 3px 8px rgba(0, 0, 0, 0.281) ;
+}
+
+
+aside > ul {
+    list-style-type:'\2714\00A0\00A0' ;
+    list-style-position: inside;
+    columns: 2;
+
+}
+aside > h3 {
+    background-color: var(--cor4);
+    color: #FFF;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.abbrsemestilo{
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: #FFF;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
+
+footer a{
+    color :#fff;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
